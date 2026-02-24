@@ -1,9 +1,9 @@
 function Doctor() {
   return (
-    <section className="bg-mint-texture py-20">
+    <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div className="surface-card p-8 md:p-10">
-          <p className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-sm font-medium text-emerald-700">
+          <p className="inline-flex rounded-full border border-[#0b4a3e]/20 bg-[#0b4a3e]/5 px-4 py-1 text-sm font-medium text-[#0b4a3e]">
             Lead Psychiatrist
           </p>
 
@@ -21,12 +21,12 @@ function Doctor() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">10+ years experience</span>
-            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">Evidence-based care</span>
-            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">Patient-first approach</span>
+            <span className="rounded-full bg-[#0b4a3e]/5 text-[#0b4a3e] text-sm px-3 py-1 border border-[#0b4a3e]/20">10+ years experience</span>
+            <span className="rounded-full bg-[#0b4a3e]/5 text-[#0b4a3e] text-sm px-3 py-1 border border-[#0b4a3e]/20">Evidence-based care</span>
+            <span className="rounded-full bg-[#0b4a3e]/5 text-[#0b4a3e] text-sm px-3 py-1 border border-[#0b4a3e]/20">Patient-first approach</span>
           </div>
 
-          <button className="mt-8 bg-emerald-600 text-white px-7 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-colors">
+          <button className="mt-8 bg-[#0b4a3e] text-white px-7 py-3 rounded-full font-semibold hover:bg-[#126151] transition-colors">
             Learn More
           </button>
         </div>

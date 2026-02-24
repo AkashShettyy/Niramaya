@@ -15,9 +15,9 @@ function WhyChoose() {
   ];
 
   return (
-    <section className="bg-mint-texture py-20">
+    <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <p className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-1 text-sm font-medium text-emerald-700">
+        <p className="inline-flex rounded-full border border-[#0b4a3e]/20 bg-[#0b4a3e]/5 px-4 py-1 text-sm font-medium text-[#0b4a3e]">
           Why Niramaya
         </p>
 

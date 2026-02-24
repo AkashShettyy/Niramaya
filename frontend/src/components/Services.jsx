@@ -33,7 +33,7 @@ function Services() {
   ]
 
   return (
-    <section className="bg-mint-texture py-20">
+    <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <p className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-1 text-sm font-medium text-emerald-700">
           Clinical Services
@@ -59,7 +59,7 @@ function Services() {
               <p className="mt-4 text-slate-600 leading-relaxed">
                 {service.description}
               </p>
-              <p className="mt-5 text-sm font-medium text-emerald-700">
+              <p className="mt-5 text-sm font-medium text-[#0b4a3e]">
                 Learn more
               </p>
             </div>
