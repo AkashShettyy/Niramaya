@@ -60,7 +60,7 @@ function Appointment() {
     <div>
       <Navbar />
 
-      <section className="bg-mint-texture py-20">
+      <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-center text-slate-900">
             Book an Appointment
@@ -108,7 +108,7 @@ function Appointment() {
               />
             </div>
 
-            <div>
+            {/* <div>
               <label className="block text-slate-700 font-medium">
                 Preferred Date
               </label>
@@ -120,7 +120,7 @@ function Appointment() {
                 className="w-full mt-2 p-3 border border-emerald-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 required
               />
-            </div>
+            </div> */}
 
             <div>
               <label className="block text-slate-700 font-medium">Message</label>
@@ -138,7 +138,7 @@ function Appointment() {
               disabled={loading}
               className="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition-colors disabled:opacity-50"
             >
-              {loading ? "Submitting..." : "Submit Appointment Request"}
+              {loading ? "Submitting..." : "Confirm Appointment"}
             </button>
           </form>
         </div>

@@ -6,7 +6,7 @@ function Contact() {
     <div>
       <Navbar />
 
-      <section className="bg-mint-texture py-20">
+      <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-center text-slate-900">
             Contact Us

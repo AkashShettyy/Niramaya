@@ -19,12 +19,7 @@ function Testimonials() {
   return (
     <section className="bg-mint-texture py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <img
-          src={logo}
-          alt="Niramaya logo"
-          className="h-14 md:h-16 w-auto mx-auto object-contain"
-        />
-
+        
         <h2 className="mt-5 text-4xl font-bold text-slate-900">
           What Our Clients Say
         </h2>

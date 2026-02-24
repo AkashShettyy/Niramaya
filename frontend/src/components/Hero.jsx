@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section
@@ -25,9 +27,9 @@ function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <button className="bg-emerald-500 text-slate-950 px-7 py-3 rounded-full font-semibold hover:bg-emerald-400 transition-colors">
+            <Link to="/appointment" className="bg-emerald-500 text-slate-950 px-7 py-3 rounded-full font-semibold hover:bg-emerald-400 transition-colors">
               Book Consultation
-            </button>
+            </Link>
 
             <button className="border border-white/50 text-white px-7 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
               Learn More
