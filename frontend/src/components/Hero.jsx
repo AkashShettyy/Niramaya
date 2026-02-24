@@ -5,7 +5,8 @@ function Hero() {
     <section
       className="relative overflow-hidden bg-slate-950"
       style={{
-        backgroundImage: "linear-gradient(120deg, rgba(2,6,23,0.62), rgba(6,78,59,0.48)), url('/images/hero-office.png')",
+        backgroundImage:
+          "linear-gradient(120deg, rgba(2,6,23,0.62), rgba(6,78,59,0.48)), url('/images/hero-office.png')",
       }}
     >
       <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-emerald-300/20 blur-3xl" />
@@ -23,13 +24,14 @@ function Hero() {
           </h1>
 
           <p className="mt-6 text-lg text-slate-200 max-w-xl leading-relaxed">
-            Personalized psychiatric treatment and supportive therapy designed around your life, goals, and pace of healing.
+            Personalized psychiatric treatment and supportive therapy designed
+            around your life, goals, and pace of healing.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <button className="bg-[#0b4a3e] text-white px-7 py-3 rounded-full font-semibold hover:bg-[#126151] transition-colors">
               Book Consultation
-            </Link>
+            </button>
 
             <button className="border border-white/50 text-white px-7 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
               Learn More
