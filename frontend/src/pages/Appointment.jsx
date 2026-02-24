@@ -6,7 +6,7 @@ function Appointment() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    date: "",
+    phone: "",
     message: "",
   });
 
@@ -15,9 +15,13 @@ function Appointment() {
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+    const nextValue =
+      name === "phone" ? value.replace(/\D/g, "").slice(0, 10) : value;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: nextValue,
     });
   };
 
@@ -43,7 +47,7 @@ function Appointment() {
         setFormData({
           name: "",
           email: "",
-          date: "",
+          phone: "",
           message: "",
         });
       } else {
@@ -108,22 +112,28 @@ function Appointment() {
               />
             </div>
 
-            {/* <div>
+            <div>
               <label className="block text-slate-700 font-medium">
-                Preferred Date
+                Phone Number
               </label>
               <input
-                type="date"
-                name="date"
-                value={formData.date}
+                type="tel"
+                name="phone"
+                value={formData.phone}
                 onChange={handleChange}
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                maxLength={10}
+                title="Please enter a 10-digit phone number"
                 className="w-full mt-2 p-3 border border-emerald-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 required
               />
-            </div> */}
+            </div>
 
             <div>
-              <label className="block text-slate-700 font-medium">Message</label>
+              <label className="block text-slate-700 font-medium">
+                Message
+              </label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -136,9 +146,9 @@ function Appointment() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition-colors disabled:opacity-50"
+              className="w-full bg-[#0b4a3e] text-white py-3 rounded-lg hover:bg-[#126151] transition-colors disabled:opacity-50"
             >
-              {loading ? "Submitting..." : "Confirm Appointment"}
+              {loading ? "Submitting..." : "Submit Appointment"}
             </button>
           </form>
         </div>
