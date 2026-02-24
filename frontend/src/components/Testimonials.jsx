@@ -1,5 +1,3 @@
-import logo from "../assets/logo.png";
-
 function Testimonials() {
   const reviews = [
     {
@@ -34,14 +32,6 @@ function Testimonials() {
           Real stories from individuals who have trusted Niramaya for their
           mental health journey.
         </p>
-
-        <div className="mt-8 flex justify-center">
-          <img
-            src={logo}
-            alt="Niramaya logo"
-            className="h-10 w-auto object-contain opacity-90"
-          />
-        </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {reviews.map((review, index) => (

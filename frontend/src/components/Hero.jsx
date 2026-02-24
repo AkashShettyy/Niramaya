@@ -29,9 +29,12 @@ function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#0b4a3e] text-white px-7 py-3 rounded-full font-semibold hover:bg-[#126151] transition-colors">
+            <Link
+              to="/appointment"
+              className="bg-[#0b4a3e] text-white px-7 py-3 rounded-full font-semibold hover:bg-[#126151] transition-colors inline-flex items-center justify-center"
+            >
               Book Consultation
-            </button>
+            </Link>
 
             <button className="border border-white/50 text-white px-7 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
               Learn More
