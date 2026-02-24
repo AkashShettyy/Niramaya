@@ -16,9 +16,6 @@ function Navbar() {
 
         {/* Menu */}
         <div className="space-x-7 hidden md:flex font-medium">
-          <Link to="/" className="text-slate-700 hover:text-emerald-700 transition-colors">
-            Home
-          </Link>
           <Link to="/about" className="text-slate-700 hover:text-emerald-700 transition-colors">
             About
           </Link>

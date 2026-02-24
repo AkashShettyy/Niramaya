@@ -17,7 +17,7 @@ function Blogs() {
     <div>
       <Navbar />
 
-      <section className="bg-mint-texture py-20 min-h-screen">
+      <section className="bg-white py-20 min-h-screen">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-center text-slate-900 mb-12">
             Mental Health Articles

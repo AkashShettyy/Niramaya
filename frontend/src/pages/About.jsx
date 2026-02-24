@@ -6,7 +6,7 @@ function About() {
     <div>
       <Navbar />
 
-      <section className="bg-mint-texture py-20">
+      <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6 text-center surface-card p-10 md:p-12">
           <h1 className="text-4xl font-bold text-slate-900">About Niramaya</h1>
 
