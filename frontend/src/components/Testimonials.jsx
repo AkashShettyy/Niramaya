@@ -19,11 +19,9 @@ function Testimonials() {
   return (
     <section className="bg-mint-texture py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <img
-          src={logo}
-          alt="Niramaya logo"
-          className="h-14 md:h-16 w-auto mx-auto object-contain"
-        />
+        <p className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-1 text-sm font-medium text-emerald-700">
+          Patient Voices
+        </p>
 
         <h2 className="mt-5 text-4xl font-bold text-slate-900">
           What Our Clients Say
@@ -33,11 +31,19 @@ function Testimonials() {
           Real stories from individuals who have trusted Niramaya for their mental health journey.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-10 mt-16">
+        <div className="mt-8 flex justify-center">
+          <img
+            src={logo}
+            alt="Niramaya logo"
+            className="h-10 w-auto object-contain opacity-90"
+          />
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-white text-slate-800 p-7 rounded-2xl shadow-sm border border-slate-200 text-left hover:shadow-md transition-shadow"
+              className="bg-white text-slate-800 p-7 rounded-2xl shadow-sm border border-emerald-100 text-left hover:shadow-md transition-shadow"
             >
               <p className="text-emerald-700 text-3xl leading-none">"</p>
               <p className="mt-2 italic leading-relaxed text-slate-600">{review.text}</p>

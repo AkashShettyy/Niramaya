@@ -2,9 +2,12 @@ function Doctor() {
   return (
     <section className="bg-mint-texture py-20">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Doctor Info (Now First) */}
-        <div>
-          <h2 className="text-4xl font-bold text-slate-900">Meet Dr. Sharma</h2>
+        <div className="surface-card p-8 md:p-10">
+          <p className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-sm font-medium text-emerald-700">
+            Lead Psychiatrist
+          </p>
+
+          <h2 className="mt-5 text-4xl font-bold text-slate-900">Meet Dr. Sharma</h2>
 
           <p className="mt-6 text-slate-600 leading-relaxed">
             Dr. Sharma is a board-certified psychiatrist with over 10 years of
@@ -17,17 +20,22 @@ function Doctor() {
             tailored to each patient’s unique journey.
           </p>
 
+          <div className="mt-6 flex flex-wrap gap-2">
+            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">10+ years experience</span>
+            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">Evidence-based care</span>
+            <span className="rounded-full bg-emerald-50 text-emerald-700 text-sm px-3 py-1 border border-emerald-100">Patient-first approach</span>
+          </div>
+
           <button className="mt-8 bg-emerald-600 text-white px-7 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-colors">
             Learn More
           </button>
         </div>
 
-        {/* Doctor Image (Now Second) */}
         <div>
           <img
             src="/images/doctor.avif"
-            alt="Doctor"
-            className="rounded-2xl shadow-xl w-full border border-emerald-100"
+            alt="Dr. Sharma"
+            className="rounded-2xl shadow-xl w-full border border-emerald-100 object-cover min-h-[420px]"
           />
         </div>
       </div>
