@@ -33,9 +33,13 @@ function Services() {
   ]
 
   return (
-    <section className="bg-mint-texture py-20">
+    <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-slate-900">
+        <p className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-1 text-sm font-medium text-emerald-700">
+          Clinical Services
+        </p>
+
+        <h2 className="mt-5 text-4xl font-bold text-slate-900">
           Our Services
         </h2>
 
@@ -43,17 +47,20 @@ function Services() {
           Professional mental health services designed to support you at every stage.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-10 mt-16">
+        <div className="grid md:grid-cols-3 gap-8 mt-14">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-white to-emerald-50/60 p-7 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+              className="bg-gradient-to-b from-white to-emerald-50/60 p-7 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
             >
-              <h3 className="text-xl font-semibold text-emerald-700">
+              <h3 className="text-xl font-semibold text-slate-900">
                 {service.title}
               </h3>
               <p className="mt-4 text-slate-600 leading-relaxed">
                 {service.description}
+              </p>
+              <p className="mt-5 text-sm font-medium text-[#0b4a3e]">
+                Learn more
               </p>
             </div>
           ))}

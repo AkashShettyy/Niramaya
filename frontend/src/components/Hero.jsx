@@ -27,7 +27,7 @@ function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <Link to="/appointment" className="bg-emerald-500 text-slate-950 px-7 py-3 rounded-full font-semibold hover:bg-emerald-400 transition-colors">
+            <button className="bg-[#0b4a3e] text-white px-7 py-3 rounded-full font-semibold hover:bg-[#126151] transition-colors">
               Book Consultation
             </Link>
 
